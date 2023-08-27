@@ -26,6 +26,11 @@ input {
   border: none;
 }
 
+main {
+
+  height: 100vh;
+}
+
 /* Define um contêiner flexível em coluna */
 .box-colum {
   display: flex;
