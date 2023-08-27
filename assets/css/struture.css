@@ -12,7 +12,10 @@
 body {
   background: #BDBDBD;
 }
+main {
 
+  height: 100vh;
+}
 /* Estiliza os elementos de entrada */
 input {
   text-align: right;
