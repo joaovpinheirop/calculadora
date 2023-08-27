@@ -1,0 +1,58 @@
+/* Define as fontes a serem usadas para todos os elementos */
+* {
+  font-family: 'Comfortaa', cursive;
+  /* Primeiro, tenta Comfortaa */
+  font-family: 'Poppins', sans-serif;
+  /* Se Comfortaa não estiver disponível, tenta Poppins */
+  font-family: 'Roboto', sans-serif;
+  /* Se Poppins não estiver disponível, tenta Roboto */
+}
+
+/* Define o fundo do corpo da página */
+body {
+  background: #BDBDBD;
+}
+
+/* Estiliza os elementos de entrada */
+input {
+  text-align: right;
+  margin-inline: 1rem;
+  width: -webkit-fill-available;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #bdbdbd00;
+  border: none;
+}
+
+/* Define um contêiner flexível em coluna */
+.box-colum {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Define um contêiner flexível em linha */
+.box-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Centraliza vertical e horizontalmente os itens */
+.align-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define um contêiner de grid com 4 colunas */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+/* Faz uma célula da grade ocupar 2 colunas e 2 linhas */
+.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
