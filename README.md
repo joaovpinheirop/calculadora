@@ -43,8 +43,41 @@ const divide = (x, y) => {
 A função `percentage(x, y)` calcula a porcentagem de um número `x` em relação a um número `y` e retorna o resultado.
 
 ````javascript
-Copy code
 const percentage = (x, y) => {
   return (y * x) / 100;
 }
 ````
+
+
+## Função de Cálculo
+
+A função `calc(x, operation, y)` é responsável por realizar cálculos matemáticos com base em duas entradas, `x` e `y`, usando a operação especificada. Esta função é usada internamente pela calculadora para executar as operações matemáticas desejadas.
+
+### Parâmetros
+
+- `x`: O primeiro número a ser usado no cálculo.
+- `operation`: A função de operação matemática a ser aplicada (por exemplo, `sum`, `subtract`, `multiply`, `divide`, `percentage`).
+- `y`: O segundo número a ser usado no cálculo.
+
+### Exemplo de Uso
+
+```javascript
+const resultadoSoma = calc(5, sum, 3); // Realiza uma soma: 5 + 3
+console.log(resultadoSoma); // Saída: 8
+
+const resultadoSubtracao = calc(10, subtract, 4); // Realiza uma subtração: 10 - 4
+console.log(resultadoSubtracao); // Saída: 6
+
+const resultadoMultiplicacao = calc(6, multiply, 2); // Realiza uma multiplicação: 6 * 2
+console.log(resultadoMultiplicacao); // Saída: 12
+
+const resultadoDivisao = calc(15, divide, 3); // Realiza uma divisão: 15 / 3
+console.log(resultadoDivisao); // Saída: 5
+
+const resultadoPorcentagem = calc(20, percentage, 25); // Calcula a porcentagem: (25 * 20) / 100
+console.log(resultadoPorcentagem); // Saída: 5
+```
+
+
+
+
